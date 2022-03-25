@@ -1,0 +1,1008 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a:link{
+  text-decoration: none!important;
+}
+
+.ligne{
+	margin:35px 0;
+}
+
+body{
+	background-color: #FFF;
+	color:#000;
+}
+
+.wrapper{
+	width:100%;
+}
+
+
+/* --------------------------------------- DEBUT NAVBAR ---------------------------------- */
+nav {
+	background-color: #667BB4;
+    width:100%;
+    height:50px;
+	z-index: 3;
+}
+
+nav ul{
+	width: 90%;
+	height:50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#FFF;
+    font-size:11px;
+    display:block;
+	transition:0.5s;
+}
+
+ul li a:hover{
+    transform: scale(1.2);
+	opacity:0.7;
+	color:#2f0e07;
+}
+
+/* --------------------------------------- FIN NAVBAR ---------------------------------- */
+
+
+/* --------------------------------------- DEBUT FOND AVEC BOUTONS ---------------------------------- */
+#fond_resto{
+	width:100%;
+	background-color:black;
+	height: 100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+#text_fond_resto{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#bienvenue{
+	margin:0 auto;
+	color:white;
+	font-size: 25px;
+	z-index: 2;
+}
+
+#bistrot_chez_soi{
+	font-weight: bold;
+	color:white;
+	margin-bottom: 40px;
+	font-size: 45px;
+	z-index: 2;
+}
+
+#action_buttons{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+
+.action{
+    text-decoration: none!important;
+	margin:10px 50px;
+	font-size: 14px;
+	height:40px;
+    border-radius: 50px;
+	width:250px;
+	z-index: 2;
+	color:#FFF;
+	background-color: rgba(102, 123, 180,1);
+	cursor:pointer;
+	transition: 0.5s;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	align-items: center;
+}
+
+.action span {
+	font-size: 15px;
+}
+
+.action:hover{
+	transform: scale(1.1);
+	background-color: rgba(102, 123, 180,0.8);
+}
+
+/* --------------------------------------- FIN FOND AVEC BOUTONS ---------------------------------- */
+
+
+/* --------------------------------------- DEBUT PRESENTATION DU RESTAURANT ---------------------------------- */
+#restaurant{
+	width:90%;
+	margin:auto;
+	min-height:400px;
+	background-color: #FFF;
+}
+
+#restaurant h2{
+	font-size:35px;
+	margin-top:20px;
+	color:#667BB4;
+	text-align:center;
+	font-style:bold;
+}
+
+#restaurant p{
+	margin:20px 30px 20px 30px;
+	text-align:center;
+	color:#000;
+}
+
+#gallerie{
+	width:80%;
+	margin:0 auto;
+}
+
+
+.carousel .carousel-item {
+	height: 300px;
+	transition:0.9s ease-in-out;
+}
+  
+.carousel-item img {
+	top: 0;
+	left: 0;
+	min-height: 100%;
+}
+
+/* --------------------------------------- FIN PRESENTATION DU RESTAURANT ---------------------------------- */
+
+
+/* --------------------------------------- DEBUT CARTE ---------------------------------- */
+#lacarte{
+	width:80%;
+	margin:0 auto;
+	justify-content:space-evenly;
+	align-items:flex-start;
+	display:flex;
+	flex-direction: row;
+}
+
+#lacarte h2{
+	font-size:35px;
+	margin:0 auto;
+	color:#667BB4;
+}
+
+#nourriture,#boissons{
+	position:relative;
+	width:45%;
+	justify-content:center;
+	align-items:center;
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(100%,100%));
+	column-gap:8px;
+	row-gap:8px;
+}
+
+#prix_softs{
+	float:right;
+}
+
+.categorie{
+	margin-bottom:10px;
+	text-align:left;
+	color:#532c1e;
+}
+
+.items{
+	text-align:left;
+	color:#000;
+	margin-bottom:10px;
+	font-size:10px;
+	overflow-wrap: break-word;
+}
+
+#dernier{
+	color:#000;
+	font-size:11px;
+}
+
+.prix{
+	font-size: 10px;
+	float:right;
+}
+
+#happyhour{
+    margin-bottom:10px; 
+    font-size:14px;
+}
+
+/* --------------------------------------- FIN CARTE ---------------------------------- */
+
+
+/* --------------------------------------- DEBUT AVIS ET CONTACTS---------------------------------- */
+.avisetcontact{
+	margin-bottom:40px;
+}
+/* --------------------------------------- FIN AVIS ET CONTACTS---------------------------------- */
+
+/* --------------------------------------- DEBUT AVIS ---------------------------------- */
+
+.avisicon{
+	width:40px;
+	height:40px;
+}
+
+
+#avis{
+	margin-top:20px;
+	height:400px;
+	background-image:url('images/tartare-au-roquefort.jpg');
+	background-size:cover;
+	background-position: center center;
+	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+#titre_avis{
+	text-align: center;
+	font-size:35px;
+}
+
+
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:350px;
+}
+
+
+.boite{
+	position: relative;
+	width:40%;
+	height: 270px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	border-radius:10px;
+	margin:20px 0px 40px 20px;
+} 
+
+.boite .pourcentage{
+	position:relative;
+	width:96%;
+	height:150px;
+}
+
+.boite  span{
+    font-size:11px;
+	color:#000;
+}
+
+.boite h3{
+	color:#000;
+}
+
+
+.boite .pourcentage .number{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.boite .pourcentage .number h2{
+	font-size:20px;
+	color:#000;
+	line-height: 150px;
+}
+
+.boite .pourcentage .number h2 span{
+	font-size:12px;
+	color:#000;
+}
+
+
+.boite .pourcentage svg {
+	position:relative;
+	width:100%;
+	height:90%;
+}
+
+.boite .pourcentage svg circle{
+	position:relative;
+	width:100%;
+	height:100%;
+	fill:none;
+	stroke-width:5;
+	stroke: #000;
+	transform: translate(5px,5px);
+	stroke-dasharray:440;
+}
+
+.boite .pourcentage svg circle:nth-child(1){
+	stroke-dashoffset:0;
+	stroke:#DCDCDC;
+}
+
+.boite .pourcentage svg circle:nth-child(2){
+	stroke-dashoffset:100;
+	stroke: green;
+}
+
+.boite .pourcentage svg .c2:nth-child(1){
+	stroke-dashoffset:0;
+	stroke:#DCDCDC;
+}
+
+.boite .pourcentage svg .c2:nth-child(2){
+	stroke-dashoffset:85;
+	stroke: green;
+}
+
+/* --------------------------------------- FIN AVIS ---------------------------------- */
+
+/* --------------------------------------- DEBUT CONTACTS ---------------------------------- */
+#contacts{
+	height: 620px;
+}
+
+#contacts h2{
+	font-size:35px;
+	padding-top:40px;
+	padding-bottom:20px;
+	color:#667BB4;
+	text-align:center;
+	font-style:bold;
+}
+
+#contacts ul li{
+	height:30px;
+	list-style:none;
+}
+
+#contacts ul li a{
+	color:#000;
+    text-decoration: underline!important; 
+}
+
+#contacts .material-icons{
+	line-height: 30px;
+	float:left;
+	font-size: 15px;
+}
+
+.icontext{
+	font-size:13px;
+	margin:0 0 10px 15px;
+}
+
+
+.reseauxsociaux{
+	height:30px;
+	width:30px;
+	margin:10px 0 0 10px;
+}
+
+#map_div{
+	display: flex;
+	justify-content: center;
+}
+
+#map{
+	margin:40px 0;
+	width:80%;
+	height:300px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+/* --------------------------------------- FIN CONTACTS ---------------------------------- */
+ 
+#div_ancre{
+	margin:60px auto;
+	width:100%;
+}
+
+#ancre{
+	text-align: center;
+    color:#000;
+	display: block;
+}
+
+#ancre:hover{
+	transform:translateY(1.2);
+}
+
+.ligne{
+	width:70%;
+	color:#000;
+	margin:40px auto;
+}
+
+@media (max-width:400px){
+	nav{
+		bottom:0;
+		position:fixed;
+	}
+
+	nav ul{
+		width: 100%;
+		height:50px;
+		display: block;
+	}
+	
+	nav ul li{
+		list-style:none;
+		display: inline-block;
+		line-height: 50px;
+		margin: 0 5px;
+	}
+
+	#action_buttons{
+		justify-content:space-between;
+	}
+
+	#bienvenue{
+		font-size: 20px;
+	}
+	
+	#bistrot_chez_soi{
+		font-size: 40px;
+	}
+
+	#carousel1{
+		display: none;
+	}
+
+	#restaurant{
+		width:100%;
+	}
+
+    #gallerie{
+        width:100%;
+    }
+
+	#lacarte{
+		width:90%;
+		flex-direction: column;
+	}
+
+	#nourriture,#boissons{
+		width:100%;
+	}
+
+	#prix_softs{
+		font-size: 16px;
+	}
+
+
+	#contacts{
+		height:700px;
+	}
+
+	#details {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#reseaux{
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items:flex-end;
+	}
+
+	.reseauxsociaux{
+		height:30px;
+		width:30px;
+		margin:0 10px 10px 10px;
+	}
+
+	#div_ancre{
+		display:none;
+	}
+
+	#map_div{
+		display: flex;
+		justify-content: center;
+		height:450px;
+	}
+}
+
+@media (min-width:400px) and (max-width:600px){
+	
+	nav{
+		bottom:0;
+		position:fixed;
+	}
+
+	nav ul li a{
+		font-size:13px;
+	}
+
+	#bienvenue{
+		font-size: 20px;
+	}
+	
+	#bistrot_chez_soi{
+		font-size: 40px;
+	}
+
+	#carousel1{
+		display: none;
+	}
+
+	#restaurant{
+		width:100%;
+	}
+
+	#lacarte{
+		width:90%;
+		flex-direction: column;
+	}
+
+	#nourriture,#boissons{
+		width:100%;
+	}
+
+	#prix_softs{
+		font-size: 16px;
+	}
+
+
+	#contacts{
+		height:660px;
+	}
+
+	.detailsetreseaux{
+		width:90%;
+		justify-content:space-evenly;
+		align-items:center;
+		display:flex;		
+	}
+
+	#details {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#reseaux{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items:center;
+	}
+
+	.reseauxsociaux{
+		height:30px;
+		width:30px;
+		margin-bottom:10px;
+	}
+
+	#div_ancre{
+		display:none;
+	}
+
+	#map_div{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+
+}
+
+@media (min-width:601px) and (max-width:700px){
+	nav {
+		height:60px;
+		width:100%;
+	}
+	
+	nav ul{
+		height:60px;
+	}
+	
+	nav ul li a{
+		font-size:15px;
+	}
+
+	#fond_resto{
+		width:100%;
+	}
+
+	#bienvenue{
+		font-size: 20px;
+	}
+
+	#bistrot_chez_soi{
+		font-size: 50px;
+	}
+
+	#action_buttons{
+		display:flex;
+		flex-direction: row;
+		justify-content:center;
+		align-items: center;
+	}
+
+	.action {
+		font-size: 15px;
+		height:50px;
+		width:250px;
+	}
+
+	#carousel1{
+		display: none;
+	}
+	
+	#lacarte{
+		width:90%;
+		flex-direction: column;
+	}
+
+	#nourriture,#boissons{
+		width:100%;
+	}
+
+	.categorie{
+		font-size:16px;
+	}
+
+	#prix_softs{
+		font-size: 16px;
+	}
+
+	.items{
+		font-size:13px;
+	}
+
+	#dernier{
+		font-size:13px;
+	}
+
+	.prix{
+		font-size:13px;
+	}
+
+	#avis{
+		width:100%;
+	}
+
+	.detailsetreseaux{
+		justify-content:center;
+		align-items:center;	
+		display:flex;
+		flex-direction: row;		
+	}
+	
+	#details ul{
+		padding-left:0;
+	}
+
+    #happyhour{
+        font-size:16px;
+    }
+
+}
+
+
+@media (min-width:701px) and (max-width: 1204px){
+	
+	nav {
+		height:60px;
+	}
+	
+	nav ul{
+		height:60px;
+	}
+	
+	nav ul li a{
+		font-size:20px;
+	}
+
+	#bienvenue{
+		font-size: 25px;
+	}
+
+	#bistrot_chez_soi{
+		font-size: 55px;
+	}
+
+	#action_buttons{
+		flex-direction: row;
+	}
+
+	.action {
+		font-size: 15px;
+		height:50px;
+		width:250px;
+	}
+
+	#gallerie{
+		width:100%;
+	}
+
+	#carousel2{
+		display: none;
+	}
+
+	.carousel .carousel-item {
+		height: 400px;
+	}
+	  
+	.carousel-item img {
+		min-height: 400px;
+	}
+	
+	#lacarte{
+		width:90%;
+		flex-direction: column;
+	}
+
+	#nourriture,#boissons{
+		width:100%;
+	}
+
+	.items{
+		font-size:15px;
+	}
+	
+	.prix{
+		font-size:15px;
+	}
+
+	#dernier{
+		font-size:15px;
+	}
+
+	.categorie{
+		font-size: 19px;
+	}
+
+	#happyhour{
+		font-size: 16px;
+	}
+	
+	#contacts{
+		width:100%;
+		height:620px;
+		margin-bottom:40px;
+	}
+	
+	.detailsetreseaux{
+		justify-content:space-evenly;
+		align-items:center;	
+		display:flex;
+		flex-direction: row;		
+	}
+	
+	#details ul{
+		padding-left:0;
+	}
+	
+	.reseauxsociaux{
+		transition:0.5s;
+	}
+
+	.reseauxsociaux:hover{
+		transform: scale(1.5);
+	}
+
+	#ancre{
+		font-size:18px;
+	}
+
+	#map{
+		margin:0 auto;
+	}
+	
+}
+
+@media (min-width:1205px){
+	
+	nav {
+		height:70px;
+	}
+	
+
+	nav ul{
+		width: 100%;
+		height:70px;
+	}
+	
+	nav ul li a{
+		font-size:25px;
+	}
+
+	#fond_resto{
+		height: 95vh;
+	}
+	
+	#bienvenue{
+		font-size: 35px;
+	}
+
+	#bistrot_chez_soi{
+		margin-bottom: 50px;
+		font-size: 70px;
+	}
+
+
+	#action_buttons{
+		flex-direction: row;
+	}
+
+
+	.action {
+		margin:0 50px;
+		font-size: 18px;
+		height:50px;
+		width:300px;
+	}
+
+	.action span{
+		font-size:20px;
+	}
+
+	#restaurant {
+		width:100%;
+		font-size:25px;
+	}
+	
+	#restaurant p{
+		margin: 0 auto 20px auto;
+		width:80%;
+		font-size:18px;
+	}
+	
+	.gallerie{
+		width:100%;
+		margin:0 auto;
+		
+	}
+
+	.carousel .carousel-item {
+		height: 500px;
+	}
+	  
+	.carousel-item img {
+		min-height: 500px;
+	}
+	
+
+	#carousel2{
+		display: none;
+	}
+	
+	#lacarte{
+		width:100%;
+		margin:20px auto 0 auto;
+	}
+	
+	#lacarte h2{
+		font-size:35px;
+	}
+	
+	.categorie{
+		font-size:25px;
+	}
+
+	#prix_softs{
+		font-size: 25px;
+		float:right;
+	}
+
+	.items{
+		font-size:15px;
+	}
+
+	#dernier{
+		font-size:15px;
+	}
+
+	.prix{
+		font-size:15px;
+	}
+	
+	#happyhour{
+		font-size:18px;
+	}
+	
+	#avisetcontacts{
+		display:flex;
+		flex-direction: row;
+		justify-content:space-evenly;
+		align-items:flex-end;
+		width:100%;
+		margin:20px auto 60px auto;
+
+	}
+	
+	#avis{
+		width:45%;
+		height:600px;
+		border-radius:10px;
+		font-size:22px;
+		display: block;
+	}
+
+	#avis  span{
+		font-size:15px;
+	}
+	
+	.container{
+		height:550px;
+	}
+	
+	#contacts{
+		height:600px;
+		width:45%;
+		display: block;
+	}
+	
+	#contacts h2{
+		font-size:30px;
+		padding-top:0;
+	}
+
+	.detailsetreseaux{
+		justify-content:space-between;
+		align-items:center;	
+		display:flex;
+		flex-direction: row;		
+	}
+	
+	#details ul{
+		padding-left:0;
+	}
+
+	.icontext{
+		font-size:16px;
+		line-height: 30px;
+	}
+
+	.icontext:hover a{
+		transform: scale(1.5);
+	}
+	
+	.reseauxsociaux{
+		margin-right:10px;
+		transition:0.5s;
+        width:40px;
+        height:40px;
+	}
+
+	.reseauxsociaux:hover{
+		transform: scale(1.5);
+	}
+	
+	#map{
+		width:100%;
+		height:330px;
+		border-radius:10px;
+	}
+}
