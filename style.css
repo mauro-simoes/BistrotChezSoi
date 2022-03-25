@@ -442,6 +442,10 @@ ul li a:hover{
 	margin:40px auto;
 }
 
+footer{
+	color:black;
+}
+
 @media (max-width:400px){
 	nav{
 		bottom:0;
